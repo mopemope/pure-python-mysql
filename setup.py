@@ -13,11 +13,11 @@ else:
     version = "%d.%d" % version_tuple[:2]
 
 setup(
-    name = "MySQLPP",
+    name = "PyMySQL",
     version = version,
     url = '',
     author = 'yutaka.matsubara',
     author_email = 'yutaka.matsubara@gmail.com',
     description = 'Pure Python MySQL Driver ',
-    packages = ['mysqlpp', 'mysqlpp.constants']
+    packages = ['pymysql', 'pymysql.constants']
 )
