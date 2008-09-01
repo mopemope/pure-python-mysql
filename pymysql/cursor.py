@@ -155,7 +155,12 @@ class Cursor(object):
         self._rows = conn._result.rows
         self._has_next = conn._result.has_next
         conn._result = None
-
+    
+    def __iter__(self):
+        self._check_executed()
+        result = self.rownumber and self._rows[self.rownumber:] or self._rows
+        return iter(result)
+    
     Warning = Warning
     Error = Error
     InterfaceError = InterfaceError
