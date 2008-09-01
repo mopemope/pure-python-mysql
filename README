@@ -1,0 +1,26 @@
+====================
+pymysql Installation
+====================
+
+.. contents::
+..
+
+Requirements
+-------------
+
++ Python 2.4 or higher
+
+ * http://www.python.org/
+ 
+ * 2.5 is the primary test environment.
+
+* MySQL 4.1 or higher
+    
+ * protocol41 support
+
+Installation
+------------
+
+# python setup.py install
+
+

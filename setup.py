@@ -5,7 +5,7 @@ import os
 import sys
 
 
-version_tuple = __import__('mysqlpp').VERSION
+version_tuple = __import__('pymysql').VERSION
 
 if version_tuple[2] is not None:
     version = "%d.%d_%s" % version_tuple
